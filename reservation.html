@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+
+    <title>Reservations</title>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <header>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+      <nav class="menu">
+        <div class="menu-branding"></div>
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="/" class="nav-link">Make Reservations</a>
+          </li>
+          <li class="nav-item">
+            <a href="table.html" class="nav-link">View Available Tables</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="reserve">
+      <h1 class="lg-heading">Please Reserve A Table</h1>
+      <h2 class="sm-heading">
+        Fill out the following to make a reservation with us
+      </h2>
+
+      <div class="fill-out">
+        <form>
+          <label for="fname">Full Name:</label><br />
+          <input type="text" id="fname" name="fname" /><br /><br />
+
+          <label for="pnumber">Phone Number:</label><br />
+          <input type="text" id="pnumber" name="pnumber" /><br /><br />
+
+          <label for="email">Email:</label><br />
+          <input type="text" id="email" name="email" /><br /><br />
+
+          <label for="unique">Unique ID:</label><br />
+          <input type="text" id="unique" name="unique" /><br /><br />
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
