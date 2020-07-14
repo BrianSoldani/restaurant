@@ -11,23 +11,11 @@ var restaurant = {
 }
 var table = [
     {
-        name : `Brian Soldani`,
-        phoneNumber : `123-363-4561`,
-        email : `bsoldani@email.com`,
-        uniqueId : `bsoldani` //routename
+        name : ``,
+        phoneNumber : ``,
+        email : ``,
+        uniqueId : ``
     },
-    {
-        name : `Kai Taylor`,
-        phoneNumber : `123-456-6545`,
-        email : `ktaylor@email.com`,
-        uniqueId : `ktaylor` //routename
-    },
-    {
-        name : `Issac Carlos`,
-        phoneNumber : `666-999-7777`,
-        email : `icarlos@email.com`,
-        uniqueId : `icarlos` //routename
-    }
 ];
 //Home Page 
 app.get("/", function(req, res) {
@@ -61,9 +49,9 @@ app.post("/api/reservation", function(req, res) {
     var newReservation = req.body;
     // Using a RegEx Pattern to remove spaces from newCharacter
     // You can read more about RegEx Patterns later https://www.regexbuddy.com/regex.html
-    newReservation.routeName = newReservation.name.replace(/\n+/g, "").toLowerCase();
+    newReservation.uniqueId = newReservation.name.replace(/\n+/g, "").toLowerCase();
     console.log(newReservation);
-    characters.push(newReservation);
+    table.push(newReservation);
     res.json(newReservation);
 });
 app.listen(PORT, function() {
